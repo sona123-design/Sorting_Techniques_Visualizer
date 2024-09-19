@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <h1>Sorting Visualizer</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <select id="algorithm-select">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="heap">Heap Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+            <button id="generate-array">Generate New Array</button>
+            <button id="start-sorting">Start Sorting</button>
+            <div class="slider-container">
+                <label for="array-size">Array Size:</label>
+                <input type="range" id="array-size" min="10" max="100" value="50">
+            </div>
+            <div class="slider-container">
+                <label for="sorting-speed">Sorting Speed:</label>
+                <input type="range" id="sorting-speed" min="1" max="100" value="50">
+            </div>
+        </div>
+        <div id="array-container"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sorting Visualizer. Created by [Sona Singh]</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
